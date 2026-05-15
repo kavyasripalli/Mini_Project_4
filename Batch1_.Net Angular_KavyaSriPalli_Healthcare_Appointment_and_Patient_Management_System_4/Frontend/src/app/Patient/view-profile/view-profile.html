@@ -1,0 +1,251 @@
+<div class="medical-profile-page">
+
+  <div class="background-overlay"></div>
+
+  <div class="container py-5">
+
+    <!-- Header -->
+
+    <div class="text-center mb-5 profile-header">
+
+      <div class="header-icon">
+        <i class="bi bi-shield-check"></i>
+      </div>
+
+      <h2>
+        Medical Identity
+      </h2>
+
+      <p>
+        Access and verify your official patient records.
+      </p>
+
+    </div>
+
+    <!-- Loading -->
+
+    <div
+      class="loading-state text-center py-5"
+      *ngIf="loading && !patient"
+    >
+
+      <div class="spinner-border text-light mb-3"></div>
+
+      <p>
+        Synchronizing with health database...
+      </p>
+
+    </div>
+
+    <!-- Search Card -->
+
+    <div
+      class="row justify-content-center"
+      *ngIf="(!patient && !loading) || showFallback"
+    >
+
+      <div class="col-lg-6">
+
+        <div class="search-card">
+
+          <div
+            class="warning-box"
+            *ngIf="message"
+          >
+
+            {{ message || 'No profile found automatically.' }}
+
+          </div>
+
+          <div class="text-center mb-4">
+
+            <div class="search-icon">
+              🔍
+            </div>
+
+            <h5>
+              Locate Profile
+            </h5>
+
+            <p>
+              Please enter your full name exactly
+              as provided during registration.
+            </p>
+
+          </div>
+
+          <form
+            [formGroup]="searchForm"
+            (ngSubmit)="manualSearch()"
+            class="search-form"
+          >
+
+            <div class="search-wrapper">
+
+              <input
+                type="text"
+                placeholder="Enter full name"
+                formControlName="name"
+              />
+
+              <button
+                type="submit"
+                [disabled]="searchForm.invalid || loading"
+              >
+
+                {{ loading ? '...' : 'Find' }}
+
+              </button>
+
+            </div>
+
+          </form>
+
+          <p class="new-patient-text">
+
+            New patient?
+
+            <a
+              routerLink="/Patient/add-patient"
+            >
+              Create Profile
+            </a>
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Profile -->
+
+    <div
+      class="row justify-content-center"
+      *ngIf="patient"
+    >
+
+      <div class="col-lg-7">
+
+        <div class="profile-card">
+
+          <!-- Top -->
+
+          <div class="profile-top">
+
+            <div class="avatar-circle">
+
+              {{ patient.name[0] }}
+
+            </div>
+
+            <div class="profile-info">
+
+              <h3>
+
+                {{ patient.name }}
+
+              </h3>
+
+              <span class="verified-badge">
+
+                Verified Patient
+
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- Details -->
+
+          <div class="profile-body">
+
+            <div class="detail-grid">
+
+              <div class="detail-box">
+
+                <label>
+                  Age
+                </label>
+
+                <p>
+
+                  {{ patient.age }} Years
+
+                </p>
+
+              </div>
+
+              <div class="detail-box">
+
+                <label>
+                  Gender
+                </label>
+
+                <p>
+
+                  {{ patient.gender }}
+
+                </p>
+
+              </div>
+
+              <div class="detail-box">
+
+                <label>
+                  Contact Number
+                </label>
+
+                <p>
+
+                  {{ patient.phoneNumber }}
+
+                </p>
+
+              </div>
+
+              <div class="detail-box">
+
+                <label>
+                  Primary Email
+                </label>
+
+                <p class="email-text">
+
+                  {{ patient.email }}
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Footer -->
+
+          <div class="profile-footer">
+
+            <a
+              [routerLink]="['/Patient/update-patient']"
+              [queryParams]="{id: patient.id}"
+              class="edit-btn"
+            >
+
+              ✏️ Edit Profile Details
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

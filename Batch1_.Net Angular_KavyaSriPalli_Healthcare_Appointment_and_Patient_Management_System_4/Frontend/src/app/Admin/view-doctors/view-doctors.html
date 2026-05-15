@@ -1,0 +1,266 @@
+<div class="doctors-page">
+
+  <!-- Top Section -->
+
+  <div class="page-header">
+
+    <div>
+
+      <h2>Medical Specialists</h2>
+
+      <p>
+        Manage and monitor all doctors within the healthcare system
+      </p>
+
+    </div>
+
+    <!-- Right Actions -->
+
+    <div class="header-actions">
+
+      <!-- Add Doctor -->
+
+      <a
+        routerLink="/Doctor/add-doctor"
+        class="add-btn"
+      >
+
+        <span>＋</span>
+
+        Register Doctor
+
+      </a>
+
+      <!-- Search -->
+
+      <div class="search-box">
+
+        <span>🔍</span>
+
+        <input
+          type="text"
+          placeholder="Search specialists..."
+          [(ngModel)]="searchTerm"
+          (ngModelChange)="applyFilter()"
+        />
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Stats -->
+
+  <div class="stats-section">
+
+    <div class="stat-card">
+
+      <small>Total Specialists</small>
+
+      <h3>{{ doctors.length }}</h3>
+
+    </div>
+
+  </div>
+
+  <!-- Loading -->
+
+  <div
+    class="loading-section"
+    *ngIf="loading && doctors.length === 0"
+  >
+
+    <div class="spinner"></div>
+
+    <p>Synchronizing doctor directory...</p>
+
+  </div>
+
+  <!-- Table Card -->
+
+  <div
+    class="table-card"
+    *ngIf="!loading || doctors.length > 0"
+  >
+
+    <div class="table-responsive">
+
+      <table class="doctors-table">
+
+        <thead>
+
+          <tr>
+
+            <th>Doctor ID</th>
+
+            <th>Doctor</th>
+
+            <th>Specialization</th>
+
+            <th>Contact</th>
+
+            <th>Availability</th>
+
+            <th class="text-center">Actions</th>
+
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr *ngFor="let d of filteredDoctors">
+
+            <!-- ID -->
+
+            <td>
+
+              <div class="doctor-id">
+
+                #DOC-{{ d.id }}
+
+              </div>
+
+            </td>
+
+            <!-- Doctor Info -->
+
+            <td>
+
+              <div class="doctor-profile">
+
+                <div class="doctor-avatar">
+
+                  DR
+
+                </div>
+
+                <div>
+
+                  <strong>
+                    Dr. {{ d.name }}
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </td>
+
+            <!-- Specialization -->
+
+            <td>
+
+              <span class="specialization-badge">
+
+                {{ d.specialization }}
+
+              </span>
+
+            </td>
+
+            <!-- Contact -->
+
+            <td>
+
+              <div class="contact-info">
+
+                <span>📧 {{ d.email }}</span>
+
+                <span>📞 {{ d.phoneNumber }}</span>
+
+              </div>
+
+            </td>
+
+            <!-- Availability -->
+
+            <td>
+
+              <div class="availability-box">
+
+                <span>
+                  From:
+                  <strong>
+                    {{ d.availableFrom | date:'shortTime' }}
+                  </strong>
+                </span>
+
+                <span>
+                  To:
+                  <strong>
+                    {{ d.availableTo | date:'shortTime' }}
+                  </strong>
+                </span>
+
+              </div>
+
+            </td>
+
+            <!-- Actions -->
+
+            <td>
+
+              <div class="action-buttons">
+
+                <button
+                  class="edit-btn"
+                  (click)="editDoctor(d.id)"
+                >
+
+                  Edit
+
+                </button>
+
+                <button
+                  class="delete-btn"
+                  (click)="deleteDoctor(d.id)"
+                >
+
+                  Delete
+
+                </button>
+
+              </div>
+
+            </td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <!-- Empty State -->
+
+    <div
+      class="empty-state"
+      *ngIf="filteredDoctors.length === 0 && !loading"
+    >
+
+      <div class="empty-icon">👨‍⚕️</div>
+
+      <h4>No specialists found</h4>
+
+      <p>Try searching using another keyword</p>
+
+    </div>
+
+  </div>
+
+  <!-- Alert -->
+
+  <div
+    class="message-box"
+    [ngClass]="message.includes('✅') ? 'success-message' : 'error-message'"
+    *ngIf="message"
+  >
+
+    {{ message }}
+
+  </div>
+
+</div>

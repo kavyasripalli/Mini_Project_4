@@ -1,0 +1,402 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Page */
+
+.doctor-profile-page {
+  min-height: 100vh;
+
+  position: relative;
+
+  background:
+    url('https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1974&auto=format&fit=crop');
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 30px 0;
+}
+
+/* Overlay */
+
+.overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.92),
+    rgba(49, 46, 129, 0.88),
+    rgba(79, 70, 229, 0.82)
+  );
+}
+
+/* Card */
+
+.doctor-profile-card {
+  position: relative;
+
+  width: 100%;
+  max-width: 760px;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 30px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  padding: 40px 35px;
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+
+  color: white;
+
+  z-index: 1;
+}
+
+/* Header */
+
+.profile-header {
+  margin-bottom: 35px;
+}
+
+.profile-icon {
+  width: 95px;
+  height: 95px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #4338ca
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto 22px;
+
+  font-size: 40px;
+
+  color: white;
+
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.profile-header h2 {
+  font-size: 38px;
+
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+.profile-header p {
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 15px;
+}
+
+.highlight-text {
+  color: white;
+
+  font-weight: 700;
+}
+
+/* Warning */
+
+.warning-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  background: rgba(251, 191, 36, 0.18);
+
+  border: 1px solid rgba(251, 191, 36, 0.35);
+
+  color: #fde68a;
+
+  padding: 16px;
+
+  border-radius: 18px;
+
+  margin-bottom: 28px;
+}
+
+.warning-icon {
+  font-size: 24px;
+}
+
+.warning-link {
+  color: white;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.warning-link:hover {
+  text-decoration: underline;
+}
+
+/* Identity Card */
+
+.identity-card {
+  background: rgba(255, 255, 255, 0.10);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 22px;
+
+  padding: 24px;
+
+  margin-bottom: 30px;
+}
+
+.identity-label {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.identity-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.doctor-badge {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #4338ca
+  );
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+
+  font-size: 20px;
+
+  color: white;
+}
+
+.identity-info h5 {
+  margin: 0 0 6px;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+.identity-info small {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Form */
+
+.doctor-form {
+  margin-top: 10px;
+}
+
+.input-group-custom {
+  margin-bottom: 24px;
+}
+
+.input-group-custom label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-weight: 600;
+
+  color: white;
+}
+
+/* Input */
+
+.input-wrapper {
+  display: flex;
+
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 18px;
+
+  padding: 0 15px;
+
+  transition: 0.3s ease;
+}
+
+.input-wrapper:focus-within {
+  border-color: #818cf8;
+
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.input-wrapper i {
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 18px;
+}
+
+.input-wrapper input {
+  width: 100%;
+
+  background: transparent;
+
+  border: none;
+
+  outline: none;
+
+  padding: 16px 12px;
+
+  color: white;
+
+  font-size: 15px;
+}
+
+.input-wrapper input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.input-wrapper input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+
+  cursor: pointer;
+}
+
+/* Button */
+
+.update-btn {
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #4338ca
+  );
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  margin-top: 12px;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+}
+
+.update-btn:hover {
+  transform: translateY(-2px);
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #3730a3
+  );
+}
+
+.update-btn:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+/* Messages */
+
+.message-box {
+  margin-top: 24px;
+
+  padding: 16px;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  font-weight: 600;
+}
+
+.message-box.success {
+  background: rgba(34, 197, 94, 0.18);
+
+  border: 1px solid rgba(34, 197, 94, 0.35);
+
+  color: #dcfce7;
+}
+
+.message-box.error {
+  background: rgba(239, 68, 68, 0.18);
+
+  border: 1px solid rgba(239, 68, 68, 0.35);
+
+  color: #fecaca;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .doctor-profile-card {
+    padding: 28px 22px;
+  }
+
+  .profile-header h2 {
+    font-size: 30px;
+  }
+
+  .identity-info {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .update-btn {
+    font-size: 15px;
+  }
+
+}

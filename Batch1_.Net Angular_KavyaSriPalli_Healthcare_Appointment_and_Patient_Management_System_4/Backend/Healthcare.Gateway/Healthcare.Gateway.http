@@ -1,0 +1,6 @@
+@Healthcare.Gateway_HostAddress = http://localhost:5187
+
+GET {{Healthcare.Gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,252 @@
+<div class="doctor-page">
+
+  <div class="overlay"></div>
+
+  <div class="container py-5 d-flex justify-content-center align-items-center">
+
+    <div class="doctor-card">
+
+      <!-- Header -->
+
+      <div class="doctor-header text-center">
+
+        <div class="doctor-icon">
+
+          <i class="bi bi-heart-pulse-fill"></i>
+
+        </div>
+
+        <h2>
+          Join Medical Staff
+        </h2>
+
+        <p>
+          Complete your professional registration
+          to begin managing patient consultations.
+        </p>
+
+      </div>
+
+      <!-- Form -->
+
+      <form
+        [formGroup]="form"
+        (ngSubmit)="submit()"
+        class="doctor-form"
+      >
+
+        <!-- Name -->
+
+        <div class="input-group-custom">
+
+          <label>
+            Professional Name
+          </label>
+
+          <div class="input-wrapper">
+
+            <span class="prefix-text">
+
+              Dr.
+
+            </span>
+
+            <input
+              type="text"
+              placeholder="John Doe"
+              formControlName="name"
+              [readOnly]="auth.role === 'Doctor'"
+            />
+
+          </div>
+
+          <small
+            class="info-text"
+            *ngIf="auth.role === 'Doctor'"
+          >
+
+            Verified name from hospital records
+
+          </small>
+
+        </div>
+
+        <!-- Specialization -->
+
+        <div class="input-group-custom">
+
+          <label>
+            Medical Specialization
+          </label>
+
+          <div class="input-wrapper">
+
+            <i class="bi bi-hospital-fill"></i>
+
+            <input
+              type="text"
+              placeholder="Cardiology, Orthopedics..."
+              formControlName="specialization"
+            />
+
+          </div>
+
+        </div>
+
+        <!-- Availability -->
+
+        <div class="row g-3">
+
+          <div class="col-md-6">
+
+            <div class="input-group-custom">
+
+              <label>
+                Available From
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="bi bi-calendar-check-fill"></i>
+
+                <input
+                  type="datetime-local"
+                  formControlName="availableFrom"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="input-group-custom">
+
+              <label>
+                Available To
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="bi bi-calendar2-check-fill"></i>
+
+                <input
+                  type="datetime-local"
+                  formControlName="availableTo"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="row g-3">
+
+          <div class="col-md-6">
+
+            <div class="input-group-custom">
+
+              <label>
+                Mobile Number
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="bi bi-telephone-fill"></i>
+
+                <input
+                  type="text"
+                  placeholder="9876543210"
+                  formControlName="phoneNumber"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="input-group-custom">
+
+              <label>
+                Professional Email
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="bi bi-envelope-fill"></i>
+
+                <input
+                  type="email"
+                  placeholder="doctor@hospital.com"
+                  formControlName="email"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Submit -->
+
+        <button
+          type="submit"
+          class="doctor-btn"
+          [disabled]="form.invalid || loading"
+        >
+
+          <span *ngIf="!loading">
+
+            ✨ Register Medical Profile
+
+          </span>
+
+          <span *ngIf="loading">
+
+            <span class="spinner-border spinner-border-sm me-2"></span>
+
+            Processing Registration...
+
+          </span>
+
+        </button>
+
+      </form>
+
+      <!-- Message -->
+
+      <div
+        class="message-box success"
+        *ngIf="message.includes('✅')"
+      >
+
+        {{ message }}
+
+      </div>
+
+      <div
+        class="message-box error"
+        *ngIf="message && !message.includes('✅')"
+      >
+
+        {{ message }}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

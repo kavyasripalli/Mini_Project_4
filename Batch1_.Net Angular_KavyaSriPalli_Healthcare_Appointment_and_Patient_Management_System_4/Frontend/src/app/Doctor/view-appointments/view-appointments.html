@@ -1,0 +1,245 @@
+<div class="consultation-page">
+
+  <div class="overlay"></div>
+
+  <div class="container py-5">
+
+    <!-- Header -->
+
+    <div class="consultation-header text-center mb-5">
+
+      <div class="header-icon">
+
+        <i class="bi bi-calendar2-week-fill"></i>
+
+      </div>
+
+      <h2>
+        Consultation Schedule
+      </h2>
+
+      <p>
+        Manage your patient appointments and clinic timeline.
+      </p>
+
+    </div>
+
+    <!-- Loading -->
+
+    <div
+      class="loading-state text-center py-5"
+      *ngIf="loading && filtered.length === 0"
+    >
+
+      <div class="spinner-border text-light mb-3"></div>
+
+      <p>
+        Synchronizing with hospital registry...
+      </p>
+
+    </div>
+
+    <!-- Card -->
+
+    <div
+      class="consultation-card"
+      *ngIf="!loading || filtered.length > 0"
+    >
+
+      <div class="table-responsive">
+
+        <table class="table consultation-table align-middle mb-0">
+
+          <thead>
+
+            <tr>
+
+              <th>
+                Ref ID
+              </th>
+
+              <th>
+                Patient Name
+              </th>
+
+              <th>
+                Scheduled Time
+              </th>
+
+              <th class="text-center">
+                Status
+              </th>
+
+              <th class="text-center">
+                Practice Actions
+              </th>
+
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            <tr *ngFor="let a of filtered">
+
+              <!-- Ref -->
+
+              <td>
+
+                <span class="ref-badge">
+
+                  #APT-{{ a.id }}
+
+                </span>
+
+              </td>
+
+              <!-- Patient -->
+
+              <td>
+
+                <div class="patient-info">
+
+                  <div class="patient-avatar">
+
+                    PT
+
+                  </div>
+
+                  <span>
+
+                    {{ patientsMap.get(a.patientId) || 'Patient #' + a.patientId }}
+
+                  </span>
+
+                </div>
+
+              </td>
+
+              <!-- Time -->
+
+              <td>
+
+                <div class="appointment-time">
+
+                  <strong>
+
+                    {{ a.appointmentDate | date:'mediumDate' }}
+
+                  </strong>
+
+                  <small>
+
+                    {{ a.appointmentDate | date:'shortTime' }}
+
+                  </small>
+
+                </div>
+
+              </td>
+
+              <!-- Status -->
+
+              <td class="text-center">
+
+                <span
+                  class="status-badge"
+                  [ngClass]="{
+                    'pending': a.status === 'Pending',
+                    'completed': a.status === 'Completed',
+                    'cancelled': a.status === 'Cancelled'
+                  }"
+                >
+
+                  {{ a.status }}
+
+                </span>
+
+              </td>
+
+              <!-- Actions -->
+
+              <td>
+
+                <div class="action-buttons">
+
+                  <button
+                    *ngIf="a.status === 'Pending'"
+                    class="complete-btn"
+                    (click)="complete(a.id!)"
+                  >
+
+                    ✅ Complete
+
+                  </button>
+
+                  <button
+                    *ngIf="a.status === 'Pending'"
+                    class="cancel-btn"
+                    (click)="cancel(a.id!)"
+                  >
+
+                    🚫 Cancel
+
+                  </button>
+
+                </div>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <!-- Empty -->
+
+      <div
+        class="empty-state"
+        *ngIf="filtered.length === 0 && !loading"
+      >
+
+        <div class="empty-icon">
+
+          📅
+
+        </div>
+
+        <h5>
+          No appointments found
+        </h5>
+
+        <p>
+          You currently have no consultations scheduled.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- Message -->
+
+    <div
+      class="message-box success"
+      *ngIf="message.includes('✅')"
+    >
+
+      {{ message }}
+
+    </div>
+
+    <div
+      class="message-box error"
+      *ngIf="message && !message.includes('✅')"
+    >
+
+      {{ message }}
+
+    </div>
+
+  </div>
+
+</div>

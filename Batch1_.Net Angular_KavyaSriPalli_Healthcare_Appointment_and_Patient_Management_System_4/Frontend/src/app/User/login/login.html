@@ -1,0 +1,125 @@
+<div class="login-page">
+
+  <div class="background-overlay"></div>
+
+  <div class="login-card">
+
+    <div class="brand-section text-center">
+
+      <div class="logo-circle">
+        <i class="bi bi-heart-pulse-fill"></i>
+      </div>
+
+      <h1>Healthcare Portal</h1>
+
+      <p>
+        Securely access your appointments,
+        doctors, and medical records.
+      </p>
+
+    </div>
+
+    <form
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+      class="login-form"
+    >
+
+      <!-- Username -->
+
+      <div class="input-group-custom">
+
+        <label>Username</label>
+
+        <div class="input-wrapper">
+
+          <i class="bi bi-person-fill"></i>
+
+          <input
+            type="text"
+            placeholder="Enter your username"
+            formControlName="userName"
+          />
+
+        </div>
+
+      </div>
+
+      <!-- Password -->
+
+      <div class="input-group-custom">
+
+        <label>Password</label>
+
+        <div class="input-wrapper">
+
+          <i class="bi bi-lock-fill"></i>
+
+          <input
+            type="password"
+            placeholder="Enter your password"
+            formControlName="password"
+          />
+
+        </div>
+
+      </div>
+
+      <!-- Login Button -->
+
+      <button
+        type="submit"
+        class="login-btn"
+        [disabled]="form.invalid || loading"
+      >
+
+        <span *ngIf="!loading">
+
+          <i class="bi bi-box-arrow-in-right me-2"></i>
+
+          Login
+
+        </span>
+
+        <span *ngIf="loading">
+
+          <span class="spinner-border spinner-border-sm me-2"></span>
+
+          Signing in...
+
+        </span>
+
+      </button>
+
+      <!-- Error Message -->
+
+      <div class="error-box" *ngIf="error">
+
+        <i class="bi bi-exclamation-circle-fill me-2"></i>
+
+        {{ error }}
+
+      </div>
+
+    </form>
+
+    <!-- Footer -->
+
+    <div class="footer-section text-center">
+
+      <p>
+        Don’t have an account?
+
+        <a
+          routerLink="/User/sign-up"
+          class="signup-link"
+        >
+          Create Account
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+
+</div>

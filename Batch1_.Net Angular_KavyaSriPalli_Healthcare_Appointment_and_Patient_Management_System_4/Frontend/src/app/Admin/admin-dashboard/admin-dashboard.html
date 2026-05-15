@@ -1,0 +1,76 @@
+<div class="admin-dashboard-page">
+
+  <div class="dashboard-wrapper">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+      <div class="logo-section">
+
+        <h2>HealthCare</h2>
+
+        <p>Admin Panel</p>
+
+      </div>
+
+      <div class="nav-links">
+
+        <a
+          *ngFor="let item of navItems"
+          [routerLink]="item.path"
+          routerLinkActive="active-nav"
+          class="nav-btn"
+        >
+
+          {{ item.label }}
+
+        </a>
+
+      </div>
+
+      <button
+        class="logout-btn"
+        (click)="logout()"
+      >
+
+        Logout
+
+      </button>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+      <!-- Top Header -->
+
+      <div class="top-header">
+
+        <div>
+
+          <h1>Admin Dashboard</h1>
+
+          <p>
+            Welcome back,
+            <span>{{ user?.userName }}</span>
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Page Content -->
+
+      <div class="content-card">
+
+        <router-outlet></router-outlet>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

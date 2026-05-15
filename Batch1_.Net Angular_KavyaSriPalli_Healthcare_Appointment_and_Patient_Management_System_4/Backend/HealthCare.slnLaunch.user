@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Healthcare.DoctorService\\Healthcare.DoctorService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Healthcare.Gateway\\Healthcare.Gateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Healthcare.PatientService\\Healthcare.PatientService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Healthcare.UserService\\Healthcare.UserService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

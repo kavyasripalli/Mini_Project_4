@@ -1,0 +1,234 @@
+<div class="appointments-page">
+
+  <div class="background-overlay"></div>
+
+  <div class="container py-5">
+
+    <!-- Header -->
+
+    <div class="text-center mb-5 appointments-header">
+
+      <div class="header-icon">
+        <i class="bi bi-calendar2-check-fill"></i>
+      </div>
+
+      <h2>
+        My Consultation Schedule
+      </h2>
+
+      <p>
+        Track and manage your upcoming medical appointments.
+      </p>
+
+    </div>
+
+    <!-- Loading -->
+
+    <div
+      class="loading-state text-center py-5"
+      *ngIf="loading && filtered.length === 0"
+    >
+
+      <div class="spinner-border text-light mb-3"></div>
+
+      <p>
+        Retrieving your wellness timeline...
+      </p>
+
+    </div>
+
+    <!-- Appointments -->
+
+    <div
+      class="row g-4"
+      *ngIf="filtered.length > 0"
+    >
+
+      <div
+        class="col-md-6 col-lg-4"
+        *ngFor="let a of filtered; trackBy: trackById"
+      >
+
+        <div
+          class="appointment-card h-100"
+          [class.cancelled]="a.status === 'Cancelled'"
+        >
+
+          <!-- Status -->
+
+          <div class="status-badge">
+
+            <span
+              class="badge"
+              [ngClass]="{
+                'pending': a.status === 'Pending',
+                'completed': a.status === 'Completed',
+                'cancelled-badge': a.status === 'Cancelled'
+              }"
+            >
+
+              {{ a.status }}
+
+            </span>
+
+          </div>
+
+          <!-- Body -->
+
+          <div class="appointment-body">
+
+            <!-- Doctor -->
+
+            <div class="doctor-info">
+
+              <div class="doctor-avatar">
+                DR
+              </div>
+
+              <div>
+
+                <small>
+                  Attending Specialist
+                </small>
+
+                <h5>
+
+                  Dr.
+                  {{ doctorsMap.get(a.doctorId) || 'Medical Staff' }}
+
+                </h5>
+
+              </div>
+
+            </div>
+
+            <!-- Details -->
+
+            <div class="appointment-details">
+
+              <div class="detail-item">
+
+                <small>
+                  Scheduled Date
+                </small>
+
+                <strong>
+
+                  {{ a.appointmentDate | date:'fullDate' }}
+
+                </strong>
+
+              </div>
+
+              <div class="detail-item">
+
+                <small>
+                  Time Slot
+                </small>
+
+                <strong class="time-text">
+
+                  {{ a.appointmentDate | date:'shortTime' }}
+
+                </strong>
+
+              </div>
+
+            </div>
+
+            <!-- Reference -->
+
+            <div class="reference-box">
+
+              <small>
+                REF ID
+              </small>
+
+              <code>
+
+                #APT-{{ a.id }}
+
+              </code>
+
+            </div>
+
+          </div>
+
+          <!-- Footer -->
+
+          <div
+            class="appointment-footer"
+            *ngIf="a.status === 'Pending'"
+          >
+
+            <button
+              class="cancel-btn"
+              (click)="cancel(a.id!)"
+            >
+
+              ❌ Cancel Appointment
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Empty State -->
+
+    <div
+      class="empty-state"
+      *ngIf="!loading && filtered.length === 0"
+    >
+
+      <div class="empty-icon">
+        📅
+      </div>
+
+      <h5>
+        No scheduled consultations
+      </h5>
+
+      <p>
+        Your health is our priority.
+        Start your journey today.
+      </p>
+
+      <a
+        routerLink="/Patient/make-appointment"
+        class="book-link-btn"
+      >
+
+        Book New Appointment
+
+      </a>
+
+    </div>
+
+    <!-- Message -->
+
+    <div
+      class="message-box success"
+      *ngIf="message.includes('✅') && filtered.length > 0"
+    >
+
+      {{ message }}
+
+    </div>
+
+    <div
+      class="message-box error"
+      *ngIf="message && !message.includes('✅') && filtered.length > 0"
+    >
+
+      {{ message }}
+
+    </div>
+
+  </div>
+
+</div>

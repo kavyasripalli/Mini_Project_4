@@ -1,0 +1,234 @@
+<div class="profile-page">
+
+  <div class="background-overlay"></div>
+
+  <div class="container py-5 d-flex justify-content-center">
+
+    <div class="profile-card">
+
+      <!-- Header -->
+
+      <div class="profile-header text-center">
+
+        <div class="profile-icon">
+          <i class="bi bi-pencil-square"></i>
+        </div>
+
+        <h2>
+          Update Profile
+        </h2>
+
+        <p *ngIf="patientName">
+
+          Reviewing records for:
+
+          <span class="highlight-text">
+            {{ patientName }}
+          </span>
+
+        </p>
+
+      </div>
+
+      <!-- No Profile -->
+
+      <div
+        class="warning-box"
+        *ngIf="!patientId && !loading"
+      >
+
+        <span class="warning-icon">
+          ⚠️
+        </span>
+
+        <div>
+
+          No patient profile found.
+
+          <a
+            routerLink="/Patient/add-patient"
+            class="warning-link"
+          >
+            Create your profile
+          </a>
+
+          first.
+
+        </div>
+
+      </div>
+
+      <!-- Form -->
+
+      <form
+        [formGroup]="form"
+        (ngSubmit)="submit()"
+        *ngIf="patientId"
+        class="profile-form"
+      >
+
+        <!-- Identity -->
+
+        <div class="identity-card">
+
+          <label class="identity-label">
+
+            Patient Identity (Verified)
+
+          </label>
+
+          <div class="identity-item">
+
+            <span>
+              Full Name
+            </span>
+
+            <strong>
+              {{ patientName }}
+            </strong>
+
+          </div>
+
+          <div class="identity-item">
+
+            <span>
+              Gender
+            </span>
+
+            <strong>
+              {{ patientGender }}
+            </strong>
+
+          </div>
+
+          <div class="identity-item">
+
+            <span>
+              Registration Email
+            </span>
+
+            <strong class="email-text">
+              {{ patientEmail }}
+            </strong>
+
+          </div>
+
+        </div>
+
+        <!-- Age -->
+
+        <div class="input-group-custom">
+
+          <label>
+            Current Age
+          </label>
+
+          <div class="input-wrapper">
+
+            <i class="bi bi-calendar2-heart-fill"></i>
+
+            <input
+              type="number"
+              placeholder="Enter your age"
+              formControlName="age"
+            />
+
+          </div>
+
+        </div>
+
+        <!-- Phone -->
+
+        <div class="input-group-custom">
+
+          <label>
+            Phone Number
+          </label>
+
+          <div class="input-wrapper">
+
+            <i class="bi bi-telephone-fill"></i>
+
+            <input
+              type="text"
+              placeholder="Enter phone number"
+              formControlName="phoneNumber"
+            />
+
+          </div>
+
+        </div>
+
+        <!-- Button -->
+
+        <button
+          type="submit"
+          class="update-btn"
+          [disabled]="form.invalid || loading"
+        >
+
+          <span *ngIf="!loading">
+
+            💾 Update Medical Details
+
+          </span>
+
+          <span *ngIf="loading">
+
+            <span class="spinner-border spinner-border-sm me-2"></span>
+
+            Syncing Records...
+
+          </span>
+
+        </button>
+
+      </form>
+
+      <!-- Message -->
+
+      <div
+        class="message-box success"
+        *ngIf="message.includes('✅')"
+      >
+        {{ message }}
+      </div>
+
+      <div
+        class="message-box error"
+        *ngIf="message && !message.includes('✅')"
+      >
+        {{ message }}
+      </div>
+
+      <!-- Footer -->
+
+      <div class="footer-section text-center">
+
+        <a
+          *ngIf="auth.role === 'Patient'"
+          routerLink="/Patient/view-profile"
+          class="back-link"
+        >
+
+          ← Back to Profile
+
+        </a>
+
+        <a
+          *ngIf="auth.role === 'Admin'"
+          routerLink="/Admin/view-patients"
+          class="back-link"
+        >
+
+          ← Back to Patient Management
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

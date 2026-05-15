@@ -1,0 +1,589 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.appointmentservice\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|solutionrelative:healthcare.appointmentservice\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.patientservice\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|solutionrelative:healthcare.patientservice\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|solutionrelative:healthcare.userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.appointmentservice\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|solutionrelative:healthcare.appointmentservice\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|solutionrelative:healthcare.userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.appointmentservice\\healthcare.appointmentservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|solutionrelative:healthcare.appointmentservice\\healthcare.appointmentservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.appointmentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|solutionrelative:healthcare.appointmentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.doctorservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|solutionrelative:healthcare.doctorservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.patientservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|solutionrelative:healthcare.patientservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.appointmentservice\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|solutionrelative:healthcare.appointmentservice\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.appointmentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|solutionrelative:healthcare.appointmentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.doctorservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|solutionrelative:healthcare.doctorservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13E80A6F-8BDE-47B5-9336-A393826C743A}|Healthcare.Gateway\\Healthcare.Gateway.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.gateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13E80A6F-8BDE-47B5-9336-A393826C743A}|Healthcare.Gateway\\Healthcare.Gateway.csproj|solutionrelative:healthcare.gateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.patientservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|solutionrelative:healthcare.patientservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.userservice\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|solutionrelative:healthcare.userservice\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13E80A6F-8BDE-47B5-9336-A393826C743A}|Healthcare.Gateway\\Healthcare.Gateway.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.gateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{13E80A6F-8BDE-47B5-9336-A393826C743A}|Healthcare.Gateway\\Healthcare.Gateway.csproj|solutionrelative:healthcare.gateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|solutionrelative:healthcare.userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.doctorservice\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|solutionrelative:healthcare.doctorservice\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.appointmentservice\\dtos\\external\\doctorlookupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|solutionrelative:healthcare.appointmentservice\\dtos\\external\\doctorlookupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.userservice\\healthcare.userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|solutionrelative:healthcare.userservice\\healthcare.userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.doctorservice\\entity\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|solutionrelative:healthcare.doctorservice\\entity\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.doctorservice\\dtos\\createdoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|solutionrelative:healthcare.doctorservice\\dtos\\createdoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.doctorservice\\dtos\\updatedoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|solutionrelative:healthcare.doctorservice\\dtos\\updatedoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.doctorservice\\dtos\\readdoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|solutionrelative:healthcare.doctorservice\\dtos\\readdoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.userservice\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|solutionrelative:healthcare.userservice\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.patientservice\\healthcare.patientservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|solutionrelative:healthcare.patientservice\\healthcare.patientservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13E80A6F-8BDE-47B5-9336-A393826C743A}|Healthcare.Gateway\\Healthcare.Gateway.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.gateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{13E80A6F-8BDE-47B5-9336-A393826C743A}|Healthcare.Gateway\\Healthcare.Gateway.csproj|solutionrelative:healthcare.gateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.userservice\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|solutionrelative:healthcare.userservice\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.userservice\\migrations\\20260427135145_intialdbcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|solutionrelative:healthcare.userservice\\migrations\\20260427135145_intialdbcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.patientservice\\migrations\\20260427134803_intialdbcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|solutionrelative:healthcare.patientservice\\migrations\\20260427134803_intialdbcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.appointmentservice\\migrations\\20260428050116_intialdbcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CAF0785-FE7D-42D9-ADF1-2216E6BB7F04}|Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj|solutionrelative:healthcare.appointmentservice\\migrations\\20260428050116_intialdbcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.doctorservice\\migrations\\20260428045325_intialdbcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|solutionrelative:healthcare.doctorservice\\migrations\\20260428045325_intialdbcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.userservice\\migrations\\20260506150235_initialcreate3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED37C88F-7B3C-4FC2-8B78-FAA0F35579F0}|Healthcare.UserService\\Healthcare.UserService.csproj|solutionrelative:healthcare.userservice\\migrations\\20260506150235_initialcreate3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.patientservice\\migrations\\20260506150122_initialcreate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BFAF0CC-7648-4827-ABA7-883C122E2D09}|Healthcare.PatientService\\Healthcare.PatientService.csproj|solutionrelative:healthcare.patientservice\\migrations\\20260506150122_initialcreate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|c:\\batch1_.net angular_kavyasripalli_healthcare_appointment_and_patient_management_system_3\\backend\\healthcare.doctorservice\\migrations\\20260506145829_initialcreate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB69462E-7769-462B-B506-2FC00B7F1127}|Healthcare.DoctorService\\Healthcare.DoctorService.csproj|solutionrelative:healthcare.doctorservice\\migrations\\20260506145829_initialcreate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Repositories\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "Healthcare.AppointmentService\\Repositories\\AppointmentRepository.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Repositories\\AppointmentRepository.cs",
+              "RelativeToolTip": "Healthcare.AppointmentService\\Repositories\\AppointmentRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T14:10:35.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\appsettings.json",
+              "RelativeDocumentMoniker": "Healthcare.UserService\\appsettings.json",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\appsettings.json",
+              "RelativeToolTip": "Healthcare.UserService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-27T14:43:58.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Healthcare.AppointmentService\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "Healthcare.AppointmentService\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T15:49:53.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Healthcare.UserService\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Healthcare.UserService\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T13:58:14.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Healthcare.PatientService\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "Healthcare.PatientService\\Controllers\\PatientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T13:25:39.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20260506150235_InitialCreate3.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Migrations\\20260506150235_InitialCreate3.cs",
+              "RelativeDocumentMoniker": "Healthcare.UserService\\Migrations\\20260506150235_InitialCreate3.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Migrations\\20260506150235_InitialCreate3.cs",
+              "RelativeToolTip": "Healthcare.UserService\\Migrations\\20260506150235_InitialCreate3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T15:02:35.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20260506150122_InitialCreate2.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\Migrations\\20260506150122_InitialCreate2.cs",
+              "RelativeDocumentMoniker": "Healthcare.PatientService\\Migrations\\20260506150122_InitialCreate2.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\Migrations\\20260506150122_InitialCreate2.cs",
+              "RelativeToolTip": "Healthcare.PatientService\\Migrations\\20260506150122_InitialCreate2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T15:01:23.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20260506145829_InitialCreate1.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\Migrations\\20260506145829_InitialCreate1.cs",
+              "RelativeDocumentMoniker": "Healthcare.DoctorService\\Migrations\\20260506145829_InitialCreate1.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\Migrations\\20260506145829_InitialCreate1.cs",
+              "RelativeToolTip": "Healthcare.DoctorService\\Migrations\\20260506145829_InitialCreate1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T14:58:30.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\appsettings.json",
+              "RelativeDocumentMoniker": "Healthcare.AppointmentService\\appsettings.json",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\appsettings.json",
+              "RelativeToolTip": "Healthcare.AppointmentService\\appsettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-27T14:44:45.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\appsettings.json",
+              "RelativeDocumentMoniker": "Healthcare.DoctorService\\appsettings.json",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\appsettings.json",
+              "RelativeToolTip": "Healthcare.DoctorService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-06T10:03:05.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\appsettings.json",
+              "RelativeDocumentMoniker": "Healthcare.PatientService\\appsettings.json",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\appsettings.json",
+              "RelativeToolTip": "Healthcare.PatientService\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-27T13:18:35.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Healthcare.AppointmentService.csproj",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj",
+              "RelativeDocumentMoniker": "Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj",
+              "RelativeToolTip": "Healthcare.AppointmentService\\Healthcare.AppointmentService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-27T17:10:22.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "Healthcare.AppointmentService\\Services\\AppointmentService.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "Healthcare.AppointmentService\\Services\\AppointmentService.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAmwOUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T15:53:43.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\Program.cs",
+              "RelativeDocumentMoniker": "Healthcare.PatientService\\Program.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\Program.cs",
+              "RelativeToolTip": "Healthcare.PatientService\\Program.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAwG8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T13:33:01.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Program.cs",
+              "RelativeDocumentMoniker": "Healthcare.AppointmentService\\Program.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Program.cs",
+              "RelativeToolTip": "Healthcare.AppointmentService\\Program.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAADwv34AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T16:24:19.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\Program.cs",
+              "RelativeDocumentMoniker": "Healthcare.DoctorService\\Program.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\Program.cs",
+              "RelativeToolTip": "Healthcare.DoctorService\\Program.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAADwv24AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T10:15:15.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.Gateway\\Program.cs",
+              "RelativeDocumentMoniker": "Healthcare.Gateway\\Program.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.Gateway\\Program.cs",
+              "RelativeToolTip": "Healthcare.Gateway\\Program.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAwGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T13:42:26.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Healthcare.UserService\\Services\\UserService.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Services\\UserService.cs",
+              "RelativeToolTip": "Healthcare.UserService\\Services\\UserService.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAwwIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T14:13:54.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ocelot.json",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.Gateway\\ocelot.json",
+              "RelativeDocumentMoniker": "Healthcare.Gateway\\ocelot.json",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.Gateway\\ocelot.json",
+              "RelativeToolTip": "Healthcare.Gateway\\ocelot.json",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwEYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-27T14:00:47.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Program.cs",
+              "RelativeDocumentMoniker": "Healthcare.UserService\\Program.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Program.cs",
+              "RelativeToolTip": "Healthcare.UserService\\Program.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAADwv14AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T14:12:26.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20260428045325_IntialDbCreate.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\Migrations\\20260428045325_IntialDbCreate.cs",
+              "RelativeDocumentMoniker": "Healthcare.DoctorService\\Migrations\\20260428045325_IntialDbCreate.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\Migrations\\20260428045325_IntialDbCreate.cs",
+              "RelativeToolTip": "Healthcare.DoctorService\\Migrations\\20260428045325_IntialDbCreate.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T04:53:26.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20260428050116_IntialDbCreate.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Migrations\\20260428050116_IntialDbCreate.cs",
+              "RelativeDocumentMoniker": "Healthcare.AppointmentService\\Migrations\\20260428050116_IntialDbCreate.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\Migrations\\20260428050116_IntialDbCreate.cs",
+              "RelativeToolTip": "Healthcare.AppointmentService\\Migrations\\20260428050116_IntialDbCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T05:01:16.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Healthcare.DoctorService\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Healthcare.DoctorService\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T05:05:21.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ReadDoctorDto.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\DTOs\\ReadDoctorDto.cs",
+              "RelativeDocumentMoniker": "Healthcare.DoctorService\\DTOs\\ReadDoctorDto.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\DTOs\\ReadDoctorDto.cs",
+              "RelativeToolTip": "Healthcare.DoctorService\\DTOs\\ReadDoctorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T04:47:22.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UpdateDoctorDto.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\DTOs\\UpdateDoctorDto.cs",
+              "RelativeDocumentMoniker": "Healthcare.DoctorService\\DTOs\\UpdateDoctorDto.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\DTOs\\UpdateDoctorDto.cs",
+              "RelativeToolTip": "Healthcare.DoctorService\\DTOs\\UpdateDoctorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T04:47:01.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CreateDoctorDto.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\DTOs\\CreateDoctorDto.cs",
+              "RelativeDocumentMoniker": "Healthcare.DoctorService\\DTOs\\CreateDoctorDto.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\DTOs\\CreateDoctorDto.cs",
+              "RelativeToolTip": "Healthcare.DoctorService\\DTOs\\CreateDoctorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T04:46:39.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\Entity\\Doctor.cs",
+              "RelativeDocumentMoniker": "Healthcare.DoctorService\\Entity\\Doctor.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.DoctorService\\Entity\\Doctor.cs",
+              "RelativeToolTip": "Healthcare.DoctorService\\Entity\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T04:45:33.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Healthcare.UserService.csproj",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Healthcare.UserService.csproj",
+              "RelativeDocumentMoniker": "Healthcare.UserService\\Healthcare.UserService.csproj",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Healthcare.UserService.csproj",
+              "RelativeToolTip": "Healthcare.UserService\\Healthcare.UserService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-27T17:10:10.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DoctorLookupDto.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\DTOs\\External\\DoctorLookupDto.cs",
+              "RelativeDocumentMoniker": "Healthcare.AppointmentService\\DTOs\\External\\DoctorLookupDto.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.AppointmentService\\DTOs\\External\\DoctorLookupDto.cs",
+              "RelativeToolTip": "Healthcare.AppointmentService\\DTOs\\External\\DoctorLookupDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T16:42:28.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.Gateway\\appsettings.json",
+              "RelativeDocumentMoniker": "Healthcare.Gateway\\appsettings.json",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.Gateway\\appsettings.json",
+              "RelativeToolTip": "Healthcare.Gateway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-27T14:44:27.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Healthcare.UserService\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Healthcare.UserService\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T14:35:22.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Healthcare.UserService\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Healthcare.UserService\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T14:35:09.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20260427135145_IntialDbCreate.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Migrations\\20260427135145_IntialDbCreate.cs",
+              "RelativeDocumentMoniker": "Healthcare.UserService\\Migrations\\20260427135145_IntialDbCreate.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.UserService\\Migrations\\20260427135145_IntialDbCreate.cs",
+              "RelativeToolTip": "Healthcare.UserService\\Migrations\\20260427135145_IntialDbCreate.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T13:51:45.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20260427134803_IntialDbCreate.cs",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\Migrations\\20260427134803_IntialDbCreate.cs",
+              "RelativeDocumentMoniker": "Healthcare.PatientService\\Migrations\\20260427134803_IntialDbCreate.cs",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\Migrations\\20260427134803_IntialDbCreate.cs",
+              "RelativeToolTip": "Healthcare.PatientService\\Migrations\\20260427134803_IntialDbCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T13:48:03.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Healthcare.PatientService.csproj",
+              "DocumentMoniker": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\Healthcare.PatientService.csproj",
+              "RelativeDocumentMoniker": "Healthcare.PatientService\\Healthcare.PatientService.csproj",
+              "ToolTip": "C:\\Batch1_.Net Angular_KavyaSriPalli_Healthcare_Appointment_and_Patient_Management_System_3\\Backend\\Healthcare.PatientService\\Healthcare.PatientService.csproj",
+              "RelativeToolTip": "Healthcare.PatientService\\Healthcare.PatientService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-27T13:18:29.705Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

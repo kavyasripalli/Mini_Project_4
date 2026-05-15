@@ -1,0 +1,271 @@
+<div class="booking-page">
+
+  <div class="background-overlay"></div>
+
+  <div class="container py-5">
+
+    <!-- Header -->
+
+    <div class="text-center mb-5 page-header">
+
+      <div class="header-icon">
+        <i class="bi bi-calendar2-check-fill"></i>
+      </div>
+
+      <h2 class="display-5">
+        Book a Consultation
+      </h2>
+
+      <p>
+        Schedule your visit with our expert
+        medical specialists.
+      </p>
+
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Booking Form -->
+
+      <div class="col-lg-5">
+
+        <div class="booking-card sticky-top">
+
+          <h4>
+            Appointment Details
+          </h4>
+
+          <form
+            [formGroup]="form"
+            (ngSubmit)="submit()"
+          >
+
+            <!-- Patient -->
+
+            <div class="mb-4">
+
+              <label class="form-label">
+                Booking For
+              </label>
+
+              <div class="patient-box d-flex align-items-center">
+
+                <div class="patient-avatar">
+                  👤
+                </div>
+
+                <div class="flex-grow-1">
+
+                  <h6 class="mb-1 fw-bold">
+
+                    {{ patientName || 'Retrieving profile...' }}
+
+                  </h6>
+
+                  <span
+                    class="badge bg-success"
+                    *ngIf="form.value.patientId"
+                  >
+                    Verified Patient
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div
+                class="alert alert-danger mt-3"
+                *ngIf="!form.value.patientId && !loading"
+              >
+
+                ⚠️ Profile not found.
+
+                <a
+                  routerLink="/Patient/add-patient"
+                  class="fw-bold text-decoration-none ms-1"
+                >
+                  Complete your profile
+                </a>
+
+              </div>
+
+            </div>
+
+            <!-- Doctor -->
+
+            <div class="mb-4">
+
+              <label class="form-label">
+                Select Specialist
+              </label>
+
+              <select
+                class="form-select"
+                formControlName="doctorId"
+              >
+
+                <option value="0">
+                  Choose a Doctor
+                </option>
+
+                <option
+                  *ngFor="let d of doctors"
+                  [value]="d.id"
+                >
+
+                  Dr. {{ d.name }}
+                  ({{ d.specialization }})
+
+                </option>
+
+              </select>
+
+            </div>
+
+            <!-- Date -->
+
+            <div class="mb-4">
+
+              <label class="form-label">
+                Appointment Date & Time
+              </label>
+
+              <input
+                type="datetime-local"
+                class="form-control"
+                formControlName="appointmentDate"
+              />
+
+            </div>
+
+            <!-- Button -->
+
+            <button
+              type="submit"
+              class="book-btn"
+              [disabled]="form.invalid || loading"
+            >
+
+              <span *ngIf="!loading">
+
+                📅 Confirm Booking
+
+              </span>
+
+              <span *ngIf="loading">
+
+                <span class="spinner-border spinner-border-sm me-2"></span>
+
+                Processing...
+
+              </span>
+
+            </button>
+
+          </form>
+
+          <!-- Message -->
+
+          <div
+            class="alert alert-success mt-4"
+            *ngIf="message.includes('✅')"
+          >
+            {{ message }}
+          </div>
+
+          <div
+            class="alert alert-danger mt-4"
+            *ngIf="message && !message.includes('✅')"
+          >
+            {{ message }}
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Doctors -->
+
+      <div class="col-lg-7">
+
+        <div class="card border-0 bg-transparent">
+
+          <h4 class="text-white fw-bold mb-4">
+
+            Our Medical Team
+
+          </h4>
+
+          <div class="row g-4">
+
+            <div
+              class="col-md-6"
+              *ngFor="let d of doctors"
+            >
+
+              <div class="doctor-card h-100">
+
+                <div class="d-flex align-items-center">
+
+                  <div class="doctor-avatar">
+
+                    DR
+
+                  </div>
+
+                  <div>
+
+                    <h6 class="mb-1 fw-bold">
+
+                      Dr. {{ d.name }}
+
+                    </h6>
+
+                    <span class="specialization-badge">
+
+                      {{ d.specialization }}
+
+                    </span>
+
+                  </div>
+
+                </div>
+
+                <div class="available-time">
+
+                  <strong>
+                    Available:
+                  </strong>
+
+                  {{ d.availableFrom | date:'shortTime' }}
+                  -
+                  {{ d.availableTo | date:'shortTime' }}
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Empty -->
+
+          <div
+            class="empty-state mt-4"
+            *ngIf="doctors.length === 0"
+          >
+
+            Synchronizing specialist directory...
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,282 @@
+<div class="patients-page">
+
+  <!-- Header -->
+
+  <div class="page-header">
+
+    <div>
+
+      <h2>Manage Patients</h2>
+
+      <p>
+        Review and maintain patient records within the healthcare system
+      </p>
+
+    </div>
+
+    <!-- Actions -->
+
+    <div class="header-actions">
+
+      <!-- Add Patient -->
+
+      <a
+        routerLink="/Patient/add-patient"
+        class="add-btn"
+      >
+
+        <span>＋</span>
+
+        Add Patient
+
+      </a>
+
+      <!-- Search -->
+
+      <div class="search-box">
+
+        <span>🔍</span>
+
+        <input
+          type="text"
+          placeholder="Search patients..."
+          [(ngModel)]="searchTerm"
+          (ngModelChange)="applyFilter()"
+        />
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Stats -->
+
+  <div class="stats-grid">
+
+    <div class="stat-card">
+
+      <small>Total Patients</small>
+
+      <h3>{{ patients.length }}</h3>
+
+    </div>
+
+    <div class="stat-card blue-card">
+
+      <small>Search Results</small>
+
+      <h3>{{ filteredPatients.length }}</h3>
+
+    </div>
+
+  </div>
+
+  <!-- Loading -->
+
+  <div
+    class="loading-section"
+    *ngIf="loading"
+  >
+
+    <div class="spinner"></div>
+
+    <p>Synchronizing patient records...</p>
+
+  </div>
+
+  <!-- Table -->
+
+  <div
+    class="table-card"
+    *ngIf="!loading"
+  >
+
+    <div class="table-responsive">
+
+      <table class="patients-table">
+
+        <thead>
+
+          <tr>
+
+            <th>Patient ID</th>
+
+            <th>Patient</th>
+
+            <th>Age</th>
+
+            <th>Gender</th>
+
+            <th>Email</th>
+
+            <th>Phone</th>
+
+            <th class="text-center">Actions</th>
+
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr *ngFor="let p of filteredPatients">
+
+            <!-- ID -->
+
+            <td>
+
+              <div class="patient-id">
+
+                #PAT-{{ p.id }}
+
+              </div>
+
+            </td>
+
+            <!-- Patient Name -->
+
+            <td>
+
+              <div class="patient-profile">
+
+                <div class="patient-avatar">
+
+                  {{ p.name.charAt(0) }}
+
+                </div>
+
+                <div>
+
+                  <strong>
+                    {{ p.name }}
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </td>
+
+            <!-- Age -->
+
+            <td>
+
+              <span class="age-text">
+
+                {{ p.age }} Years
+
+              </span>
+
+            </td>
+
+            <!-- Gender -->
+
+            <td>
+
+              <span
+                class="gender-badge"
+                [ngClass]="{
+                  'male-badge': p.gender === 'Male',
+                  'female-badge': p.gender === 'Female',
+                  'other-badge': p.gender === 'Other'
+                }"
+              >
+
+                {{ p.gender }}
+
+              </span>
+
+            </td>
+
+            <!-- Email -->
+
+            <td>
+
+              <span class="contact-text">
+
+                {{ p.email }}
+
+              </span>
+
+            </td>
+
+            <!-- Phone -->
+
+            <td>
+
+              <span class="contact-text">
+
+                {{ p.phoneNumber }}
+
+              </span>
+
+            </td>
+
+            <!-- Actions -->
+
+            <td>
+
+              <div class="action-buttons">
+
+                <a
+                  [routerLink]="['/Patient/update-patient']"
+                  [queryParams]="{id: p.id}"
+                  class="edit-btn"
+                >
+
+                  Edit
+
+                </a>
+
+                <button
+                  class="delete-btn"
+                  (click)="deletePatient(p.id)"
+                >
+
+                  Delete
+
+                </button>
+
+              </div>
+
+            </td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <!-- Empty State -->
+
+    <div
+      class="empty-state"
+      *ngIf="filteredPatients.length === 0"
+    >
+
+      <div class="empty-icon">👥</div>
+
+      <h4>No patient records found</h4>
+
+      <p>Try adjusting your search keyword</p>
+
+    </div>
+
+  </div>
+
+  <!-- Message -->
+
+  <div
+    class="message-box"
+    [ngClass]="message.includes('✅') ? 'success-message' : 'error-message'"
+    *ngIf="message"
+  >
+
+    {{ message }}
+
+  </div>
+
+</div>

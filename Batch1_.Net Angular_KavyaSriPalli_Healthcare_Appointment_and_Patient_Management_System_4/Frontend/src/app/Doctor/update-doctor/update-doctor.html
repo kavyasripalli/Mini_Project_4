@@ -1,0 +1,294 @@
+<div class="doctor-profile-page">
+
+  <div class="overlay"></div>
+
+  <div class="container py-5 d-flex justify-content-center">
+
+    <div class="doctor-profile-card">
+
+      <!-- Header -->
+
+      <div class="profile-header text-center">
+
+        <div class="profile-icon">
+
+          <i class="bi bi-pencil-square"></i>
+
+        </div>
+
+        <h2>
+          Update Clinical Profile
+        </h2>
+
+        <p *ngIf="doctorName">
+
+          Managing professional records for:
+
+          <span class="highlight-text">
+
+            Dr. {{ doctorName }}
+
+          </span>
+
+        </p>
+
+      </div>
+
+      <!-- Warning -->
+
+      <div
+        class="warning-box"
+        *ngIf="!doctorId && !loading"
+      >
+
+        <span class="warning-icon">
+
+          ⚠️
+
+        </span>
+
+        <div>
+
+          No doctor profile found.
+
+          <a
+            routerLink="/Doctor/add-doctor"
+            class="warning-link"
+          >
+
+            Register your profile
+
+          </a>
+
+          first.
+
+        </div>
+
+      </div>
+
+      <!-- Form -->
+
+      <form
+        [formGroup]="form"
+        (ngSubmit)="submit()"
+        *ngIf="doctorId"
+        class="doctor-form"
+      >
+
+        <!-- Identity Card -->
+
+        <div class="identity-card">
+
+          <label class="identity-label">
+
+            Verified Identity
+
+          </label>
+
+          <div class="identity-info">
+
+            <div class="doctor-badge">
+
+              DR
+
+            </div>
+
+            <div>
+
+              <h5>
+
+                Dr. {{ doctorName }}
+
+              </h5>
+
+              <small>
+
+                Clinical profile verified by administration
+
+              </small>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Specialization -->
+
+        <div class="input-group-custom">
+
+          <label>
+            Field of Expertise
+          </label>
+
+          <div class="input-wrapper">
+
+            <i class="bi bi-heart-pulse-fill"></i>
+
+            <input
+              type="text"
+              placeholder="Cardiology, Neurology..."
+              formControlName="specialization"
+            />
+
+          </div>
+
+        </div>
+
+        <!-- Availability -->
+
+        <div class="row g-3">
+
+          <div class="col-md-6">
+
+            <div class="input-group-custom">
+
+              <label>
+                Duty Starts
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="bi bi-calendar-check-fill"></i>
+
+                <input
+                  type="datetime-local"
+                  formControlName="availableFrom"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="input-group-custom">
+
+              <label>
+                Duty Ends
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="bi bi-calendar2-check-fill"></i>
+
+                <input
+                  type="datetime-local"
+                  formControlName="availableTo"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="row g-3">
+
+          <div class="col-md-6">
+
+            <div class="input-group-custom">
+
+              <label>
+                Mobile Number
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="bi bi-telephone-fill"></i>
+
+                <input
+                  type="text"
+                  placeholder="9876543210"
+                  formControlName="phoneNumber"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="input-group-custom">
+
+              <label>
+                Work Email
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="bi bi-envelope-fill"></i>
+
+                <input
+                  type="email"
+                  placeholder="doctor@hospital.com"
+                  formControlName="email"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Submit -->
+
+        <button
+          type="submit"
+          class="update-btn"
+          [disabled]="form.invalid || loading"
+        >
+
+          <span *ngIf="!loading">
+
+            💾 Update Profile
+
+          </span>
+
+          <span *ngIf="loading">
+
+            <span class="spinner-border spinner-border-sm me-2"></span>
+
+            Updating...
+
+          </span>
+
+        </button>
+
+      </form>
+
+      <!-- Messages -->
+
+      <div
+        class="message-box success"
+        *ngIf="message.includes('✅')"
+      >
+
+        {{ message }}
+
+      </div>
+
+      <div
+        class="message-box error"
+        *ngIf="message && !message.includes('✅')"
+      >
+
+        {{ message }}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

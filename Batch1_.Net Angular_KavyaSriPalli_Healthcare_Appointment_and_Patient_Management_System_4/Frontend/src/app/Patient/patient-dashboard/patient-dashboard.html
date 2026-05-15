@@ -1,0 +1,66 @@
+<div class="dashboard-page">
+
+  <div class="background-overlay"></div>
+
+  <div class="container-fluid py-4 px-md-5">
+
+    <div class="dashboard-card">
+
+      <!-- Header -->
+
+      <div class="dashboard-header">
+
+        <div>
+
+          <h2>
+            Patient Dashboard
+          </h2>
+
+          <p>
+            Welcome back,
+            {{ user?.userName }}
+          </p>
+
+        </div>
+
+        <button
+          class="logout-btn"
+          (click)="logout()"
+        >
+
+          Logout
+
+        </button>
+
+      </div>
+
+      <!-- Navigation -->
+
+      <div class="dashboard-nav">
+
+        <a
+          *ngFor="let item of navItems"
+          [routerLink]="item.path"
+          routerLinkActive="active-nav"
+          class="nav-link-btn"
+        >
+
+          {{ item.label }}
+
+        </a>
+
+      </div>
+
+      <!-- Content -->
+
+      <div class="dashboard-content">
+
+        <router-outlet></router-outlet>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

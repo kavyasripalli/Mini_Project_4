@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Page */
+
+.booking-page {
+  min-height: 100vh;
+
+  padding: 30px 0;
+
+  position: relative;
+
+  background:
+    url('https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1974&auto=format&fit=crop');
+
+  background-size: cover;
+  background-position: center;
+}
+
+.booking-page::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.90),
+    rgba(30, 64, 175, 0.85),
+    rgba(37, 99, 235, 0.75)
+  );
+
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+
+.page-header h2 {
+  color: white;
+
+  font-weight: 700;
+
+  margin-bottom: 12px;
+
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.page-header p {
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 15px;
+}
+
+/* Booking Form Card */
+
+.booking-card {
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(18px);
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  padding: 30px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+
+  color: white;
+
+  top: 2rem;
+}
+
+.booking-card h4 {
+  font-weight: 700;
+
+  margin-bottom: 24px;
+}
+
+/* Patient Box */
+
+.patient-box {
+  background: rgba(255, 255, 255, 0.14);
+
+  border-radius: 18px;
+
+  padding: 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.patient-avatar {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 14px;
+
+  color: white;
+
+  font-size: 20px;
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+/* Labels */
+
+.form-label {
+  color: white;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select {
+  background: rgba(255, 255, 255, 0.14) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+
+  border-radius: 16px !important;
+
+  color: white !important;
+
+  padding: 14px 16px !important;
+
+  box-shadow: none !important;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-select option {
+  color: black;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #60a5fa !important;
+
+  box-shadow: 0 0 0 0.2rem rgba(96, 165, 250, 0.2) !important;
+}
+
+/* Button */
+
+.book-btn {
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  margin-top: 10px;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.35);
+}
+
+.book-btn:hover {
+  transform: translateY(-2px);
+
+  background: linear-gradient(
+    135deg,
+    #1d4ed8,
+    #1e40af
+  );
+}
+
+.book-btn:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+/* Alerts */
+
+.alert {
+  border-radius: 16px !important;
+
+  border: none !important;
+
+  font-size: 14px;
+}
+
+/* Doctor Cards */
+
+.doctor-card {
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(18px);
+
+  border-radius: 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  padding: 20px;
+
+  color: white;
+
+  transition: all 0.3s ease;
+
+  height: 100%;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.doctor-avatar {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #06b6d4,
+    #2563eb
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 14px;
+
+  color: white;
+
+  font-weight: 700;
+
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+}
+
+.specialization-badge {
+  background: rgba(6, 182, 212, 0.2);
+
+  color: #bfdbfe;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  display: inline-block;
+
+  margin-top: 4px;
+}
+
+.available-time {
+  margin-top: 14px;
+
+  padding-top: 12px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 13px;
+}
+
+.available-time strong {
+  color: white;
+}
+
+/* Empty State */
+
+.empty-state {
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(18px);
+
+  border-radius: 22px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Sticky */
+
+.sticky-top {
+  z-index: 100;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .booking-card {
+    padding: 24px;
+  }
+
+  .doctor-card {
+    padding: 18px;
+  }
+
+  .book-btn {
+    font-size: 15px;
+  }
+
+  .page-header h2 {
+    font-size: 32px;
+  }
+
+}

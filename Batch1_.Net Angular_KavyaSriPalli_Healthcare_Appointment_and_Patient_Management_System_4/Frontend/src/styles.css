@@ -1,0 +1,94 @@
+/* Global Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML & BODY */
+
+html,
+body {
+
+  min-height: 100%;
+
+  font-family: 'Inter', sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+/* Body */
+
+body {
+  background-color: #0f172a;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Inputs */
+
+input,
+select,
+textarea {
+
+  outline: none;
+
+  font-family: 'Inter', sans-serif;
+}
+
+/* Bootstrap Containers */
+
+.container,
+.container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Smooth Transition */
+
+button,
+a,
+input,
+select,
+textarea {
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}

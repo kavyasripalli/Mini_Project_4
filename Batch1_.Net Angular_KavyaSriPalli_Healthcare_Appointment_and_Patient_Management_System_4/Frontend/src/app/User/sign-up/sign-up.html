@@ -1,0 +1,157 @@
+<div class="signup-page">
+
+  <div class="background-overlay"></div>
+
+  <div class="signup-card">
+
+    <div class="brand-section text-center">
+
+      <div class="logo-circle">
+        <i class="bi bi-person-plus-fill"></i>
+      </div>
+
+      <h1>Create Account</h1>
+
+      <p>
+        Join the Healthcare Portal to manage
+        appointments and medical services.
+      </p>
+
+    </div>
+
+    <form
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+      class="signup-form"
+    >
+
+      <!-- Username -->
+
+      <div class="input-group-custom">
+
+        <label>Username</label>
+
+        <div class="input-wrapper">
+
+          <i class="bi bi-person-fill"></i>
+
+          <input
+            type="text"
+            placeholder="Choose your username"
+            formControlName="userName"
+          />
+
+        </div>
+
+      </div>
+
+      <!-- Password -->
+
+      <div class="input-group-custom">
+
+        <label>Password</label>
+
+        <div class="input-wrapper">
+
+          <i class="bi bi-lock-fill"></i>
+
+          <input
+            type="password"
+            placeholder="Create a secure password"
+            formControlName="password"
+          />
+
+        </div>
+
+      </div>
+
+      <!-- Role -->
+
+      <div class="input-group-custom">
+
+        <label>Select Role</label>
+
+        <div class="input-wrapper">
+
+          <i class="bi bi-person-badge-fill"></i>
+
+          <select formControlName="role">
+
+            <option value="">
+              Choose Role
+            </option>
+
+            <option value="Patient">
+              Patient
+            </option>
+
+            <option value="Doctor">
+              Doctor
+            </option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+      <!-- Signup Button -->
+
+      <button
+        type="submit"
+        class="signup-btn"
+        [disabled]="form.invalid || loading"
+      >
+
+        <span *ngIf="!loading">
+
+          <i class="bi bi-person-check-fill me-2"></i>
+
+          Create Account
+
+        </span>
+
+        <span *ngIf="loading">
+
+          <span class="spinner-border spinner-border-sm me-2"></span>
+
+          Creating account...
+
+        </span>
+
+      </button>
+
+      <!-- Error -->
+
+      <div class="error-box" *ngIf="error">
+
+        <i class="bi bi-exclamation-circle-fill me-2"></i>
+
+        {{ error }}
+
+      </div>
+
+    </form>
+
+    <!-- Footer -->
+
+    <div class="footer-section text-center">
+
+      <p>
+
+        Already have an account?
+
+        <a
+          routerLink="/User/login"
+          class="login-link"
+        >
+          Login Here
+        </a>
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>

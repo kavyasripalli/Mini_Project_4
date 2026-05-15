@@ -1,0 +1,256 @@
+<div class="appointments-page">
+
+  <!-- Top Section -->
+
+  <div class="page-top">
+
+    <div>
+
+      <h2>Appointment Monitoring</h2>
+
+      <p>
+        Oversee and manage all medical appointments efficiently
+      </p>
+
+    </div>
+
+    <!-- Search -->
+
+    <div class="search-box">
+
+      <span>🔍</span>
+
+      <input
+        type="text"
+        placeholder="Search patient, doctor, or status..."
+        [(ngModel)]="searchTerm"
+        (ngModelChange)="applyFilter()"
+      />
+
+    </div>
+
+  </div>
+
+  <!-- Statistics -->
+
+  <div class="stats-grid">
+
+    <div class="stat-card">
+
+      <small>Total Appointments</small>
+
+      <h3>{{ appointments.length }}</h3>
+
+    </div>
+
+    <div class="stat-card blue-card">
+
+      <small>Filtered Results</small>
+
+      <h3>{{ filteredAppointments.length }}</h3>
+
+    </div>
+
+  </div>
+
+  <!-- Loading -->
+
+  <div
+    class="loading-section"
+    *ngIf="loading && appointments.length === 0"
+  >
+
+    <div class="spinner"></div>
+
+    <p>Loading appointment records...</p>
+
+  </div>
+
+  <!-- Table Card -->
+
+  <div
+    class="table-card"
+    *ngIf="!loading || appointments.length > 0"
+  >
+
+    <div class="table-responsive">
+
+      <table class="appointments-table">
+
+        <thead>
+
+          <tr>
+
+            <th>Appointment ID</th>
+
+            <th>Patient</th>
+
+            <th>Doctor</th>
+
+            <th>Date & Time</th>
+
+            <th>Status</th>
+
+            <th class="text-center">Actions</th>
+
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr *ngFor="let a of filteredAppointments">
+
+            <!-- Appointment ID -->
+
+            <td>
+
+              <div class="appointment-id">
+
+                #APT-{{ a.id }}
+
+              </div>
+
+            </td>
+
+            <!-- Patient -->
+
+            <td>
+
+              <div class="user-info">
+
+                <strong>
+                  {{ patientsMap.get(a.patientId) || 'User #' + a.patientId }}
+                </strong>
+
+              </div>
+
+            </td>
+
+            <!-- Doctor -->
+
+            <td>
+
+              <div class="doctor-name">
+
+                Dr.
+                {{ doctorsMap.get(a.doctorId) || 'Staff #' + a.doctorId }}
+
+              </div>
+
+            </td>
+
+            <!-- Date -->
+
+            <td>
+
+              <div class="date-box">
+
+                <strong>
+                  {{ a.appointmentDate | date:'mediumDate' }}
+                </strong>
+
+                <span>
+                  {{ a.appointmentDate | date:'shortTime' }}
+                </span>
+
+              </div>
+
+            </td>
+
+            <!-- Status -->
+
+            <td>
+
+              <span
+                class="status-badge"
+                [ngClass]="{
+                  'pending-status': a.status === 'Pending',
+                  'completed-status': a.status === 'Completed',
+                  'cancelled-status': a.status === 'Cancelled'
+                }"
+              >
+
+                {{ a.status }}
+
+              </span>
+
+            </td>
+
+            <!-- Actions -->
+
+            <td>
+
+              <div class="action-buttons">
+
+                <button
+                  *ngIf="a.status === 'Pending'"
+                  class="complete-btn"
+                  (click)="completeAppointment(a.id)"
+                >
+
+                  Complete
+
+                </button>
+
+                <button
+                  *ngIf="a.status === 'Pending'"
+                  class="cancel-btn"
+                  (click)="cancelAppointment(a.id)"
+                >
+
+                  Cancel
+
+                </button>
+
+                <button
+                  class="delete-btn"
+                  (click)="deleteAppointment(a.id)"
+                >
+
+                  Delete
+
+                </button>
+
+              </div>
+
+            </td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <!-- Empty State -->
+
+    <div
+      class="empty-state"
+      *ngIf="filteredAppointments.length === 0 && !loading"
+    >
+
+      <div class="empty-icon">📅</div>
+
+      <h4>No appointments found</h4>
+
+      <p>Try searching with another keyword</p>
+
+    </div>
+
+  </div>
+
+  <!-- Message Alert -->
+
+  <div
+    class="message-box"
+    [ngClass]="message.includes('✅') ? 'success-message' : 'error-message'"
+    *ngIf="message"
+  >
+
+    {{ message }}
+
+  </div>
+
+</div>

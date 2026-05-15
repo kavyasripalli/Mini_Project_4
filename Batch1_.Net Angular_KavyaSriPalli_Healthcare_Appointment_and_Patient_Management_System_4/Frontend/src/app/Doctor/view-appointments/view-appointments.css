@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Page */
+
+.consultation-page {
+  min-height: 100vh;
+
+  position: relative;
+
+  background:
+    url('https://images.unsplash.com/photo-1587351021759-3e566b3db4f1?q=80&w=1974&auto=format&fit=crop');
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 30px 0;
+}
+
+/* Overlay */
+
+.overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.92),
+    rgba(49, 46, 129, 0.88),
+    rgba(79, 70, 229, 0.82)
+  );
+}
+
+/* Header */
+
+.consultation-header {
+  position: relative;
+
+  color: white;
+
+  z-index: 1;
+}
+
+.header-icon {
+  width: 95px;
+  height: 95px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #4338ca
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto 22px;
+
+  font-size: 40px;
+
+  color: white;
+
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.consultation-header h2 {
+  font-size: 38px;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.consultation-header p {
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 15px;
+}
+
+/* Loading */
+
+.loading-state {
+  position: relative;
+
+  z-index: 1;
+}
+
+.loading-state p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Card */
+
+.consultation-card {
+  position: relative;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+
+  z-index: 1;
+}
+
+/* Table */
+
+.consultation-table {
+  margin: 0;
+
+  color: white;
+}
+
+.consultation-table thead {
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #4338ca
+  );
+}
+
+.consultation-table th {
+  padding: 18px 20px;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+  border-bottom: none;
+
+  color: white;
+}
+
+.consultation-table td {
+  padding: 20px;
+
+  border-color: rgba(255, 255, 255, 0.08);
+
+  vertical-align: middle;
+}
+
+.consultation-table tbody tr {
+  transition: 0.3s ease;
+}
+
+.consultation-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Ref Badge */
+
+.ref-badge {
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  color: #c7d2fe;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+/* Patient */
+
+.patient-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-weight: 600;
+}
+
+.patient-avatar {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: rgba(99, 102, 241, 0.18);
+
+  border: 1px solid rgba(99, 102, 241, 0.35);
+
+  color: #c7d2fe;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+/* Time */
+
+.appointment-time {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.appointment-time strong {
+  color: white;
+
+  margin-bottom: 4px;
+}
+
+.appointment-time small {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+/* Status */
+
+.status-badge {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.pending {
+  background: rgba(250, 204, 21, 0.18);
+
+  border: 1px solid rgba(250, 204, 21, 0.35);
+
+  color: #fde68a;
+}
+
+.completed {
+  background: rgba(34, 197, 94, 0.18);
+
+  border: 1px solid rgba(34, 197, 94, 0.35);
+
+  color: #dcfce7;
+}
+
+.cancelled {
+  background: rgba(239, 68, 68, 0.18);
+
+  border: 1px solid rgba(239, 68, 68, 0.35);
+
+  color: #fecaca;
+}
+
+/* Buttons */
+
+.action-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+.complete-btn,
+.cancel-btn {
+  border: none;
+
+  border-radius: 14px;
+
+  padding: 10px 16px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.complete-btn {
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #4338ca
+  );
+
+  color: white;
+
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+.complete-btn:hover {
+  transform: translateY(-2px);
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #3730a3
+  );
+}
+
+.cancel-btn {
+  background: rgba(239, 68, 68, 0.18);
+
+  border: 1px solid rgba(239, 68, 68, 0.35);
+
+  color: #fecaca;
+}
+
+.cancel-btn:hover {
+  background: #dc2626;
+
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+/* Empty */
+
+.empty-state {
+  padding: 70px 20px;
+
+  text-align: center;
+
+  color: white;
+}
+
+.empty-icon {
+  font-size: 70px;
+
+  opacity: 0.5;
+
+  margin-bottom: 20px;
+}
+
+.empty-state h5 {
+  font-size: 26px;
+
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+/* Messages */
+
+.message-box {
+  position: relative;
+
+  z-index: 1;
+
+  margin-top: 28px;
+
+  padding: 16px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  font-weight: 600;
+}
+
+.message-box.success {
+  background: rgba(34, 197, 94, 0.18);
+
+  border: 1px solid rgba(34, 197, 94, 0.35);
+
+  color: #dcfce7;
+}
+
+.message-box.error {
+  background: rgba(239, 68, 68, 0.18);
+
+  border: 1px solid rgba(239, 68, 68, 0.35);
+
+  color: #fecaca;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .consultation-header h2 {
+    font-size: 30px;
+  }
+
+  .consultation-table th,
+  .consultation-table td {
+    padding: 14px 12px;
+  }
+
+  .patient-avatar {
+    display: none;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .complete-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+
+}

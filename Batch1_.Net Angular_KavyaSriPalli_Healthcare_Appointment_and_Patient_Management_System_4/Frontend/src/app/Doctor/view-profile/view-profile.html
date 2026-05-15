@@ -1,0 +1,276 @@
+<div class="doctor-view-page">
+
+  <div class="overlay"></div>
+
+  <div class="container py-5">
+
+    <!-- Header -->
+
+    <div class="profile-header text-center mb-5">
+
+      <div class="header-icon">
+
+        <i class="bi bi-person-vcard-fill"></i>
+
+      </div>
+
+      <h2>
+        Professional Credentials
+      </h2>
+
+      <p>
+        Verified clinical profile and expertise summary.
+      </p>
+
+    </div>
+
+    <!-- Loading -->
+
+    <div
+      class="loading-state text-center py-5"
+      *ngIf="loading && !doctor"
+    >
+
+      <div class="spinner-border text-light mb-3"></div>
+
+      <p>
+        Synchronizing with staff directory...
+      </p>
+
+    </div>
+
+    <!-- Search -->
+
+    <div
+      class="row justify-content-center"
+      *ngIf="(!doctor && !loading) || showFallback"
+    >
+
+      <div class="col-lg-6">
+
+        <div class="search-card">
+
+          <div
+            class="warning-box"
+            *ngIf="message"
+          >
+
+            {{ message || 'No profile found automatically.' }}
+
+          </div>
+
+          <div class="text-center mb-4">
+
+            <div class="search-icon">
+
+              🔍
+
+            </div>
+
+            <h5>
+              Locate Professional Record
+            </h5>
+
+            <p>
+              Please search by your professional
+              name used during hospital registration.
+            </p>
+
+          </div>
+
+          <form
+            [formGroup]="searchForm"
+            (ngSubmit)="manualSearch()"
+          >
+
+            <div class="search-wrapper">
+
+              <span class="prefix-text">
+
+                Dr.
+
+              </span>
+
+              <input
+                type="text"
+                placeholder="John Doe"
+                formControlName="name"
+              />
+
+              <button
+                type="submit"
+                [disabled]="searchForm.invalid || loading"
+              >
+
+                {{ loading ? '...' : 'Find' }}
+
+              </button>
+
+            </div>
+
+          </form>
+
+          <p class="register-text">
+
+            Not registered yet?
+
+            <a routerLink="/Doctor/add-doctor">
+
+              Register Profile
+
+            </a>
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Profile -->
+
+    <div
+      class="row justify-content-center"
+      *ngIf="doctor"
+    >
+
+      <div class="col-lg-8">
+
+        <div class="profile-card">
+
+          <!-- Top -->
+
+          <div class="profile-top">
+
+            <div class="avatar-circle">
+
+              {{ doctor.name[0] }}
+
+            </div>
+
+            <div class="doctor-info">
+
+              <h3>
+
+                Dr. {{ doctor.name }}
+
+              </h3>
+
+              <span class="specialization-badge">
+
+                {{ doctor.specialization }}
+
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- Body -->
+
+          <div class="profile-body">
+
+            <div class="detail-grid">
+
+              <div class="detail-box">
+
+                <label>
+                  Professional Email
+                </label>
+
+                <p class="email-text">
+
+                  {{ doctor.email }}
+
+                </p>
+
+              </div>
+
+              <div class="detail-box">
+
+                <label>
+                  Clinic Mobile
+                </label>
+
+                <p>
+
+                  {{ doctor.phoneNumber }}
+
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- Schedule -->
+
+            <div class="schedule-section">
+
+              <h5>
+
+                Consultation Schedule
+
+              </h5>
+
+              <div class="schedule-grid">
+
+                <div class="schedule-box">
+
+                  <small>
+                    Available From
+                  </small>
+
+                  <strong>
+
+                    {{ doctor.availableFrom | date:'shortTime' }}
+
+                  </strong>
+
+                </div>
+
+                <div class="schedule-box">
+
+                  <small>
+                    Available Until
+                  </small>
+
+                  <strong>
+
+                    {{ doctor.availableTo | date:'shortTime' }}
+
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Footer -->
+
+          <div class="profile-footer">
+
+            <a
+              [routerLink]="['/Doctor/update-doctor']"
+              [queryParams]="{id: doctor.id}"
+              class="manage-btn"
+            >
+
+              ✏️ Manage Professional Details
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
